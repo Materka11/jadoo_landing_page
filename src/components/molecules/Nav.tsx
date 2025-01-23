@@ -6,10 +6,10 @@ interface IProps {
 
 export const Nav = ({ items }: IProps) => {
   return (
-    <nav>
-      <ul>
+    <nav className="w-full max-w-[459px]">
+      <ul className="flex justify-between gap-14">
         {items.map((item, index) => (
-          <li key={index} className="">
+          <li key={index} className="list-none">
             <NavItem {...item} />
           </li>
         ))}

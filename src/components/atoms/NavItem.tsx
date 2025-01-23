@@ -5,7 +5,7 @@ export interface IProps {
 
 export const NavItem = ({ label, link }: IProps) => {
   return (
-    <a href={link} className="text-midnightBlue no-underline">
+    <a href={link} className="text-midnightBlue">
       {label}
     </a>
   );
