@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
+  ----default-font-family: 'Poppins', sans-serif;
+
   --font-opensans: 'Open Sans', sans-serif;
   --font-popins: 'Poppins', sans-serif;
   --font-volkov: 'Volkov', sans-serif;
@@ -8,7 +10,7 @@
 }
 
 :root {
-  font-family: var(--popins);
+  font-family: var(--default-font-family);
   line-height: 1.5;
   font-weight: 400;
 
