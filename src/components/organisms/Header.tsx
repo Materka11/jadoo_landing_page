@@ -10,7 +10,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="flex w-full items-center">
+    <header className="mx-36 my-12 flex h-10 w-full items-center justify-between">
       <Logo />
       <Nav items={NAV_ITEMS} />
     </header>
