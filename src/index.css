@@ -1,13 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
-  --opensans: 'Open Sans', sans-serif;
-  --popins: 'Poppins', sans-serif;
-  --volkov: 'Volkov', sans-serif;
-  --montserrat: 'Montserrat', sans-serif;
+@theme {
+  --font-opensans: 'Open Sans', sans-serif;
+  --font-popins: 'Poppins', sans-serif;
+  --font-volkov: 'Volkov', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
 
+: root {
   font-family: var(--popins);
   line-height: 1.5;
   font-weight: 400;
