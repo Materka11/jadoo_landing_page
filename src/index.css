@@ -7,7 +7,7 @@
   --font-montserrat: 'Montserrat', sans-serif;
 }
 
-: root {
+:root {
   font-family: var(--popins);
   line-height: 1.5;
   font-weight: 400;
