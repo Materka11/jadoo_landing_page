@@ -1,9 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --default-font-family: 'Poppins', sans-serif;
+
+  --font-opensans: 'Open Sans', sans-serif;
+  --font-popins: 'Poppins', sans-serif;
+  --font-volkov: 'Volkov', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+
+  --color-midnight: #212832;
+}
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--default-font-family);
   line-height: 1.5;
   font-weight: 400;
 
