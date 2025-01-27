@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import TextRectangle from '../../assets/TextRectangle';
+import TextRectangle from '../../components/atoms/TextRectangle';
 
 export default {
   title: 'Atoms/TextRectangle',
