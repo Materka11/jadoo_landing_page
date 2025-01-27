@@ -1,3 +1,4 @@
+import { AuthButton } from '../atoms/AuthButton';
 import { Logo } from '../atoms/Logo';
 import { Nav } from '../molecules/Nav';
 
@@ -10,9 +11,13 @@ export const Header = () => {
   ];
 
   return (
-    <header className="mx-36 my-12 flex h-10 w-full items-center justify-between">
+    <header className="mx-36 my-12 flex h-10 w-auto items-center justify-between">
       <Logo />
       <Nav items={NAV_ITEMS} />
+      <section className="flex gap-14">
+        <AuthButton label="Login" action={() => {}} />
+        <AuthButton label="Sign up" action={() => {}} isBorder />
+      </section>
     </header>
   );
 };
