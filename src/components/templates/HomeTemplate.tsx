@@ -1,4 +1,5 @@
 import { CardList } from '../organisms/CardList';
+import { Footer } from '../organisms/Footer';
 
 export const HomeTemplate = () => {
   const cards = [
@@ -22,5 +23,10 @@ export const HomeTemplate = () => {
     },
   ];
 
-  return <CardList cards={cards} />;
+  return (
+    <>
+      <CardList cards={cards} />
+      <Footer />
+    </>
+  );
 };
