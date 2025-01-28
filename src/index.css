@@ -6,6 +6,11 @@
   --font-popins: 'Poppins', sans-serif;
   --font-volkov: 'Volkov', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
+
+  /* colors */
+  --color-orange: #df6951;
+  --color-content-title: #181e4b;
+  --color-text-color: #5e6282;
 }
 
 :root {
