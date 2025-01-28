@@ -6,6 +6,9 @@
   --font-popins: 'Poppins', sans-serif;
   --font-volkov: 'Volkov', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
+
+  --color-deepblue: '#181E4B';
+  --color-softgray: '#5E6282';
 }
 
 :root {
