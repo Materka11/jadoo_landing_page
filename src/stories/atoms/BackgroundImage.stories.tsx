@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import BackgroundImage from '../../components/atoms/BackgroundImage';
+import { BackgroundImage } from '../../components/atoms/BackgroundImage';
 
 export default {
   title: 'Atoms/BackgroundImage',
