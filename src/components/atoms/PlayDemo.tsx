@@ -1,10 +1,10 @@
-import Triangle from './Triangle';
+import { Triangle } from './Triangle';
 
 interface IPlayDemoProps {
   onClick?: () => void;
 }
 
-const PlayDemo = ({ onClick }: IPlayDemoProps) => (
+export const PlayDemo = ({ onClick }: IPlayDemoProps) => (
   <div className="flex items-center gap-3">
     <button
       onClick={onClick}
@@ -16,5 +16,3 @@ const PlayDemo = ({ onClick }: IPlayDemoProps) => (
     <p className="font-popins text-dark-gray text-lg font-medium">Play Demo</p>
   </div>
 );
-
-export default PlayDemo;

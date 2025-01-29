@@ -1,4 +1,4 @@
-const Triangle = () => (
+export const Triangle = () => (
   <svg
     width="12"
     height="13"
@@ -9,5 +9,3 @@ const Triangle = () => (
     <path d="M12 6.5L0.749999 12.9952L0.75 0.00480889L12 6.5Z" fill="white" />
   </svg>
 );
-
-export default Triangle;
