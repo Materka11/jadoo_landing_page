@@ -1,35 +1,30 @@
+import { AppStore, IAppStore } from '../atoms/AppStore';
 import { ISocial, SocialIcon } from '../atoms/SocialIcon';
-import { FacebookIcon } from '../../assets/FacebookIcon';
-import { InstagramIcon } from '../../assets/InstagramIcon';
-import { TwitterIcon } from '../../assets/TwitterIcon';
 
-export const Socials = () => {
-  const SOCIALS: ISocial[] = [
-    {
-      Icon: FacebookIcon,
-      link: 'https://facebook.com',
-    },
-    {
-      Icon: InstagramIcon,
-      link: 'https://instagram.com',
-      isColor: true,
-    },
-    {
-      Icon: TwitterIcon,
-      link: 'https://twitter.com',
-    },
-  ];
+export interface IProps {
+  socials: ISocial[];
+  appStories: IAppStore[];
+}
 
+export const Socials = ({ socials, appStories }: IProps) => {
   return (
-    <section className="flex gap-6">
-      {SOCIALS?.map((social) => (
-        <SocialIcon
-          key={social?.link}
-          link={social?.link}
-          Icon={social?.Icon}
-          isColor={social?.isColor}
-        />
-      ))}
-    </section>
+    <div className="flex flex-col gap-4">
+      <section className="flex gap-6">
+        {socials?.map((social) => (
+          <SocialIcon
+            key={social?.link}
+            link={social?.link}
+            Icon={social?.Icon}
+            isColor={social?.isColor}
+          />
+        ))}
+      </section>
+      <h4 className="text-softgray mt-2 text-xl">Discover our app</h4>
+      <section className="flex gap-2">
+        {appStories?.map((appStory) => (
+          <AppStore key={appStory.sublabel} {...appStory} />
+        ))}
+      </section>
+    </div>
   );
 };
