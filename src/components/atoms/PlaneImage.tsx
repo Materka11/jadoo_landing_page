@@ -1,15 +1,15 @@
 export interface IPlaneImageProps {
-  className: string;
+  className?: string;
 }
 export const PlaneImage = ({ className }: IPlaneImageProps) => {
   return (
     <svg
-      width="167"
-      height="154"
+      width="100%"
+      height="100%"
+      className={className}
       viewBox="0 0 167 154"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
     >
       <path
         d="M96.1744 86.8472C94.816 87.1514 93.493 87.715 92.2875 88.5024C89.1467 90.5037 87.3194 93.3604 88.2063 94.8826C89.0933 96.4047 92.3583 96.0154 95.4991 94.0141C96.7209 93.2545 97.8063 92.2837 98.6884 91.1617C99.0978 90.6196 99.1713 89.9442 98.8761 89.4393L97.7239 87.4619C97.4307 86.9554 96.8226 86.7145 96.1744 86.8472Z"
