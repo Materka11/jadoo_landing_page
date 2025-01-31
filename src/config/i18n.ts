@@ -15,7 +15,7 @@ languageDetector.addDetector({
   },
 });
 
-i18n
+await i18n
   .use(HttpBackend)
   .use(languageDetector)
   .use(initReactI18next)
@@ -36,8 +36,15 @@ i18n
 
 export default i18n;
 
-export const handleChangeLanguage = (event: ChangeEvent<HTMLSelectElement>) => {
-  const newLang: string = event.target.value?.toLocaleLowerCase();
-  localStorage.setItem('lang', newLang);
-  i18n.changeLanguage(newLang);
+export const handleChangeLanguage = async (
+  event: ChangeEvent<HTMLSelectElement>
+) => {
+  try {
+    const newLang: string = event.target.value?.toLocaleLowerCase();
+    localStorage.setItem('lang', newLang);
+    await i18n.changeLanguage(newLang);
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.error('Error changing language:', error);
+  }
 };
