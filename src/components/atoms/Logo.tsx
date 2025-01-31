@@ -1,4 +1,4 @@
-import LogoIMG from '../../assets/image/logo.webp';
+import LogoIMG from '../../assets/image/Logo.webp';
 
 export const Logo = () => {
   return (
