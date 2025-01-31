@@ -2,6 +2,7 @@
 
 @theme {
   --default-font-family: 'Poppins', sans-serif;
+
   --font-opensans: 'Open Sans', sans-serif;
   --font-popins: 'Poppins', sans-serif;
   --font-volkov: 'Volkov', sans-serif;
@@ -10,6 +11,7 @@
   --color-darkblue: '#080809';
   --color-deepblue: '#181E4B';
   --color-softgray: '#5E6282';
+  --color-midnight: #212832;
 }
 
 :root {
