@@ -8,10 +8,10 @@ export const LanguageSelector = ({ languages }: IProps) => {
   return (
     <select
       onChange={handleChangeLanguage}
-      className="font-opensans text-midnight cursor-pointer px-2 py-1 font-medium focus:outline-none"
+      className="font-opensans lg:text-midnight cursor-pointer py-1 font-medium text-white focus:outline-none lg:px-2"
     >
       {languages?.map((lng) => (
-        <option key={lng} value={lng}>
+        <option key={lng} value={lng} className="text-midnight">
           {lng}
         </option>
       ))}
