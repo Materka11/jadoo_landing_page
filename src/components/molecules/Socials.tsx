@@ -19,7 +19,7 @@ export const Socials = ({ socials, appStories }: IProps) => {
           />
         ))}
       </section>
-      <h4 className="text-softgray mt-2 text-xl">Discover our app</h4>
+      <h4 className="mt-2 text-xl text-gray-600">Discover our app</h4>
       <section className="flex gap-2">
         {appStories?.map((appStory) => (
           <AppStore key={appStory.sublabel} {...appStory} />
