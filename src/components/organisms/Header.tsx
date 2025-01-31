@@ -28,7 +28,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex w-auto items-center justify-between p-6 py-6 lg:p-0 lg:px-6 lg:py-6 xl:px-36 xl:py-12">
+    <header className="flex w-auto items-center justify-between">
       <Logo />
       <div
         className={`absolute top-10 -right-45 flex h-9/10 w-fit flex-col justify-between gap-10 pb-12 lg:static lg:h-auto lg:flex-row lg:items-center lg:gap-20 lg:pb-0 ${!isHamburgerMenuOpen && 'hidden lg:flex'}`}
