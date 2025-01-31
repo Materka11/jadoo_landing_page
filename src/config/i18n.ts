@@ -15,7 +15,7 @@ languageDetector.addDetector({
   },
 });
 
-await i18n
+void i18n
   .use(HttpBackend)
   .use(languageDetector)
   .use(initReactI18next)
