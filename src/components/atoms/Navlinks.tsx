@@ -11,10 +11,10 @@ export interface IProps {
 export const Navlinks = ({ label, links }: IProps) => {
   return (
     <section className="flex max-w-fit flex-col gap-8">
-      <h4 className="text-darkblue text-xl font-bold first-letter:uppercase">
+      <h4 className="text-darkblue text-md font-bold first-letter:uppercase lg:text-xl">
         {label}
       </h4>
-      <ul className="flex flex-col gap-1 text-lg text-gray-600">
+      <ul className="flex flex-col gap-1 text-sm text-gray-600 lg:text-lg">
         {links?.map((link) => (
           <li key={link?.label}>
             <a href={link?.url}>{link?.label}</a>

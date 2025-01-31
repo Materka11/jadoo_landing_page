@@ -10,7 +10,7 @@ export interface IProps {
 
 export const ListNavlinks = ({ groupLinks }: IProps) => {
   return (
-    <div className="flex gap-18">
+    <div className="flex gap-5 lg:gap-18">
       {Object.entries(groupLinks).map(([label, links]) => (
         <Navlinks key={label} label={label} links={links} />
       ))}

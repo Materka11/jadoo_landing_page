@@ -60,16 +60,21 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="mx-36 my-20 flex justify-between">
-      <Headers
-        label="Jadoo."
-        sublabel="Book your trip in minute, get full control for much longer"
-        labelStyles="text-5xl text-deepblue"
-        sublabelStyles="text-sm text-gray-600 max-w-[225px]"
-        sectionStyles="gap-5"
-      />
-      <ListNavlinks groupLinks={LINKS} />
-      <Socials socials={SOCIALS} appStories={APP_STORIES} />
+    <footer className="flex flex-col items-center gap-12 lg:gap-21">
+      <section className="flex w-full flex-col items-center justify-between gap-5 md:flex-row lg:gap-0">
+        <Headers
+          label="Jadoo."
+          sublabel="Book your trip in minute, get full control for much longer"
+          labelStyles="text-3xl lg:text-5xl text-deepblue"
+          sublabelStyles="text-xs lg:text-sm text-gray-600 max-w-[225px]"
+          sectionStyles="gap-3 lg:gap-5"
+        />
+        <ListNavlinks groupLinks={LINKS} />
+        <Socials socials={SOCIALS} appStories={APP_STORIES} />
+      </section>
+      <h6 className="text-center text-xs text-gray-600 lg:text-sm">
+        All rights reserved
+      </h6>
     </footer>
   );
 };
