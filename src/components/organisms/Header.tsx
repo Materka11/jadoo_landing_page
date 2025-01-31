@@ -11,6 +11,9 @@ export const Header = () => {
   const toggleHamburgerMenu = useHamburgerStore(
     (state) => state.toggleHamburgerMenu
   );
+  const isHamburgerMenuOpen = useHamburgerStore(
+    (state) => state.isHamburgerMenuOpen
+  );
 
   const NAV_ITEMS = [
     { label: t('destinations'), link: '/' },
@@ -25,11 +28,18 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex w-auto items-center justify-between p-6 lg:p-0 lg:px-36 lg:py-12">
+    <header className="flex w-auto items-center justify-between p-6 py-6 lg:p-0 lg:px-6 lg:py-6 xl:px-36 xl:py-12">
       <Logo />
-      <div className="absolute top-10 -right-45 flex w-fit flex-col justify-between text-white lg:flex-row lg:items-center lg:gap-20">
-        <Nav items={NAV_ITEMS} />
-        <section className="flex flex-col lg:flex-row lg:gap-11">
+      <div
+        className={`absolute top-10 -right-45 flex h-9/10 w-fit flex-col justify-between gap-10 pb-12 lg:static lg:h-auto lg:flex-row lg:items-center lg:gap-20 lg:pb-0 ${!isHamburgerMenuOpen && 'hidden lg:flex'}`}
+      >
+        <section>
+          <Nav items={NAV_ITEMS} />
+          <section className="block lg:hidden">
+            <LanguageSelector languages={LANGUAGES} />
+          </section>
+        </section>
+        <section className="flex flex-col gap-5 lg:flex-row xl:gap-11">
           <AuthButton label={t('login')} action={() => {}} />
           <AuthButton
             label={t('signup')}
@@ -37,7 +47,9 @@ export const Header = () => {
             isBorder
             className="ml-2"
           />
-          <LanguageSelector languages={LANGUAGES} />
+          <section className="hidden justify-center lg:flex lg:items-center">
+            <LanguageSelector languages={LANGUAGES} />
+          </section>
         </section>
       </div>
       <HamburgerIcon className="lg:hidden" onClick={handleHamburgerClick} />

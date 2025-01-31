@@ -14,7 +14,7 @@ export const AuthButton = ({
   return (
     <button
       onClick={action}
-      className={`font-opensans text-midnight cursor-pointer rounded-md px-6 py-2 font-medium hover:text-white ${isBorder ? 'hover:bg-midnight border' : ''} ${className} `}
+      className={`font-opensans lg:text-midnight hover:text-midnight cursor-pointer rounded-md px-6 py-2 font-medium text-white lg:hover:text-white ${isBorder ? 'lg:hover:bg-midnight border hover:bg-white' : ''} ${className} `}
     >
       {label}
     </button>
