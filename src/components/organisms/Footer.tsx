@@ -1,5 +1,4 @@
 import { Headers } from '../atoms/Headers';
-import { Navlinks } from '../atoms/Navlinks';
 import { Socials } from '../molecules/Socials';
 import { ISocial } from '../atoms/SocialIcon';
 import { FacebookIcon } from '../atoms/FacebookIcon';
@@ -8,13 +7,24 @@ import { TwitterIcon } from '../atoms/TwitterIcon';
 import { IAppStore } from '../atoms/AppStore';
 import { AppleIcon } from '../atoms/AppleIcon';
 import { GooglePlayIcon } from '../atoms/GooglePlayIcon';
+import { IGroupLinks, ListNavlinks } from '../molecules/ListNavlinks';
 
 export const Footer = () => {
-  const LINKS = {
+  const LINKS: IGroupLinks = {
     company: [
       { label: 'About', url: '/' },
       { label: 'Careers', url: '/' },
       { label: 'Mobile', url: '/' },
+    ],
+    contact: [
+      { label: 'Help/FAQ', url: '/' },
+      { label: 'Press', url: '/' },
+      { label: 'Affilates', url: '/' },
+    ],
+    more: [
+      { label: 'Airlinefees', url: '/' },
+      { label: 'Airline', url: '/' },
+      { label: 'Low fare tips', url: '/' },
     ],
   };
 
@@ -55,10 +65,10 @@ export const Footer = () => {
         label="Jadoo."
         sublabel="Book your trip in minute, get full control for much longer"
         labelStyles="text-5xl text-deepblue"
-        sublabelStyles="text-sm text-softgray max-w-[225px]"
+        sublabelStyles="text-sm text-gray-600 max-w-[225px]"
         sectionStyles="gap-5"
       />
-      <Navlinks label="Company" links={LINKS?.company} />
+      <ListNavlinks groupLinks={LINKS} />
       <Socials socials={SOCIALS} appStories={APP_STORIES} />
     </footer>
   );

@@ -13,6 +13,6 @@ Default.args = {
   label: 'Jadoo.',
   sublabel: 'Book your trip in minute, get full control for much longer',
   labelStyles: 'text-5xl text-deepblue',
-  sublabelStyles: 'text-sm text-softgray max-w-[225px]',
+  sublabelStyles: 'text-sm text-gray-600 max-w-[225px]',
   sectionStyles: 'gap-5',
 };
