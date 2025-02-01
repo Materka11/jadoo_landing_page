@@ -15,6 +15,10 @@ languageDetector.addDetector({
   },
 });
 
+const baseUrl = window.origin.includes('github.io')
+  ? `${window.origin}/${window.location.pathname.split('/')[1]}`
+  : window.origin;
+
 void i18n
   .use(HttpBackend)
   .use(languageDetector)
@@ -26,7 +30,7 @@ void i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: `${baseUrl}/locales/{{lng}}/translation.json`,
     },
     detection: {
       order: ['localStorage', 'navigator'],
