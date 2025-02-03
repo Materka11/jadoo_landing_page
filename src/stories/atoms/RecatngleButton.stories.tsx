@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
-import RectangleButton, {
+import {
+  RectangleButton,
   IButtonProps,
 } from '../../components/atoms/RectangleButton';
 

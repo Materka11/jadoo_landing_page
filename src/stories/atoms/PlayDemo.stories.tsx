@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import PlayDemo from '../../components/atoms/PlayDemo';
+import { PlayDemo } from '../../components/atoms/PlayDemo';
 
 export default {
   title: 'Atoms/PlayDemo',

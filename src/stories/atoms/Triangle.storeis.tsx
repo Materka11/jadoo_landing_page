@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import Triangle from '../../components/atoms/Triangle';
+import { Triangle } from '../../components/atoms/Triangle';
 
 export default {
   title: 'Atoms/Triangle',

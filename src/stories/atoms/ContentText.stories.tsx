@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import ContentText from '../../components/atoms/ContentText';
+import { ContentText } from '../../components/atoms/ContentText';
 
 export default {
   title: 'Atoms/ContentText',
