@@ -2,17 +2,18 @@
 
 @theme {
   --default-font-family: 'Poppins', sans-serif;
+
   --font-opensans: 'Open Sans', sans-serif;
   --font-popins: 'Poppins', sans-serif;
   --font-volkhov: 'Volkhov', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
-
-  /* colors */
+  --color-darkblue: '#080809';
+  --color-deepblue: '#181E4B';
+  --color-midnight: #212832;
   --color-orange: #df6951;
   --color-content-title: #181e4b;
   --color-text-color: #5e6282;
   --color-dark-gray: #686d77;
-  --color-coral: #df6951;
   --color-orange-button: #f1a501;
 }
 
