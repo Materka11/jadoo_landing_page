@@ -1,4 +1,5 @@
 import { CardList } from '../organisms/CardList';
+import { Category } from '../organisms/Category';
 import { Footer } from '../organisms/Footer';
 import { Header } from '../organisms/Header';
 
@@ -29,6 +30,7 @@ export const HomeTemplate = () => {
       <Header />
       <section>
         <CardList cards={cards} />
+        <Category />
       </section>
       <Footer />
     </div>
