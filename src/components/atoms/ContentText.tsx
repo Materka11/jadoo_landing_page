@@ -1,6 +1,6 @@
 import TextRectangle from './TextRectangle';
 
-const ContentText = () => (
+export const ContentText = () => (
   <div className="relative flex flex-col sm:text-center">
     <div className="matrix-[1,0,0,1,0,0] bg-orange absolute top-28 left-80 z-[-1] hidden w-0 transform lg:top-22 lg:left-40 lg:block lg:h-16 2xl:left-80">
       <TextRectangle />
@@ -18,5 +18,3 @@ const ContentText = () => (
     </p>
   </div>
 );
-
-export default ContentText;

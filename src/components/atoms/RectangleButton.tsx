@@ -4,7 +4,7 @@ export interface IButtonProps {
   href: string;
 }
 
-const RectangleButton = ({ label, color, href }: IButtonProps) => {
+export const RectangleButton = ({ label, color, href }: IButtonProps) => {
   return (
     <a
       href={href}
@@ -14,5 +14,3 @@ const RectangleButton = ({ label, color, href }: IButtonProps) => {
     </a>
   );
 };
-
-export default RectangleButton;

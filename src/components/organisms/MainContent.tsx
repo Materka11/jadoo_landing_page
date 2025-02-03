@@ -1,4 +1,4 @@
-import TextAndButtons from '../../molecules/TextAndButtons';
+import { TextAndButtons } from '../../molecules/TextAndButtons';
 import { MainContentImage } from '../atoms/MainContentImage';
 
 const MainContent = () => {
