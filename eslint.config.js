@@ -12,7 +12,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default [
   {
-    ignores: ['dist'],
+    ignores: ['dist/'],
+  },
+  {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
