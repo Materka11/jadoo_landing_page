@@ -104,3 +104,7 @@ export const parameters = {
 ```sh
 npm run storybook
 ```
+
+## Live Demo
+
+You can see the live demo of this project at https://materka11.github.io/jadoo_landing_page/
