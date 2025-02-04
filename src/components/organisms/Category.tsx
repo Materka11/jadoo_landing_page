@@ -1,10 +1,11 @@
 import { Headers } from '../atoms/Headers';
 import { CategoryCard } from '../atoms/CategoryCard';
 import { PlaneWithRectangleIcon } from '../atoms/PlaneWithRectangleIcon';
+import Bg1 from '../../assets/image/Bg1.webp';
 
 export const Category = () => {
   return (
-    <section>
+    <section className="relative">
       <Headers
         label="Category"
         sublabel="We Offer Best Services"
@@ -16,6 +17,11 @@ export const Category = () => {
         Icon={PlaneWithRectangleIcon}
         title="Best Flights"
         description="Engrossed listening. Park gate sell they west hard for the."
+      />
+      <img
+        src={Bg1}
+        alt="bacground image"
+        className="absolute top-0 -right-20 z-0"
       />
     </section>
   );
