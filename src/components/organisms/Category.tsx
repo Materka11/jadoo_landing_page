@@ -36,7 +36,7 @@ export const Category = () => {
   ];
 
   return (
-    <section className="relative flex flex-col gap-16 py-28">
+    <section className="relative my-28 flex flex-col gap-16">
       <Headers
         label="Category"
         sublabel="We Offer Best Services"
