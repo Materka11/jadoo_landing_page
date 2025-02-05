@@ -1,6 +1,7 @@
 import { Headers } from '../atoms/Headers';
 import { ICategoryCard } from '../atoms/CategoryCard';
 import { PlaneWithRectangleIcon } from '../atoms/PlaneWithRectangleIcon';
+import Bg1 from '../../assets/image/Bg1.webp';
 import { CategoryListCard } from '../molecules/CategoryListCard';
 import { SatelliteWithRectangleIcon } from '../atoms/SatelliteWithRectangleIcon';
 import { MicWithRectangleIcon } from '../atoms/MicWithRectangleIcon';
@@ -35,7 +36,7 @@ export const Category = () => {
   ];
 
   return (
-    <section className="flex flex-col gap-16 py-28">
+    <section className="relative flex flex-col gap-16 py-28">
       <Headers
         label="Category"
         sublabel="We Offer Best Services"
@@ -44,6 +45,11 @@ export const Category = () => {
         sectionStyles="gap-1 lg:gap-2 text-center"
       />
       <CategoryListCard cards={CARDS} />
+      <img
+        src={Bg1}
+        alt="bacground image"
+        className="absolute top-0 -right-20 z-0"
+      />
     </section>
   );
 };
