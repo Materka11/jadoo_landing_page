@@ -1,6 +1,6 @@
-import { ContentText } from '../components/atoms/ContentText';
-import { PlayDemo } from '../components/atoms/PlayDemo';
-import { RectangleButton } from '../components/atoms/RectangleButton';
+import { ContentText } from '../atoms/ContentText';
+import { PlayDemo } from '../atoms/PlayDemo';
+import { RectangleButton } from '../atoms/RectangleButton';
 
 export const TextAndButtons = () => {
   return (

@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { TextAndButtons } from '../../molecules/TextAndButtons';
+import { TextAndButtons } from '../../components/molecules/TextAndButtons';
 
 export default {
   title: 'Molecules/TextAndButtons',
