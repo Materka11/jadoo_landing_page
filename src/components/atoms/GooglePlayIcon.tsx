@@ -12,7 +12,7 @@ export const GooglePlayIcon = ({ className }: IProps) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_1_521)">
+      <g clipPath="url(#clip0_1_521)">
         <path
           d="M11.5075 10.0018L1.46393 19.673C0.993605 19.3516 0.714365 18.817 0.719303 18.2473V1.75626C0.714365 1.18663 0.993605 0.65199 1.46393 0.330566L11.5075 10.0018Z"
           fill="#2196F3"
