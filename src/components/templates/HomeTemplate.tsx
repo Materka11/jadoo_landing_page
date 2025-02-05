@@ -27,9 +27,7 @@ export const HomeTemplate = () => {
   return (
     <div className="flex h-full min-h-screen w-full max-w-[1440px] flex-col justify-between p-6 lg:p-0 lg:px-6 lg:py-6 xl:px-32 xl:py-12">
       <Header />
-      <section>
-        <CardList cards={cards} />
-      </section>
+      <section className="mt-6 mb-6"></section>
       <Footer />
     </div>
   );
