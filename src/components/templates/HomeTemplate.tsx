@@ -2,6 +2,7 @@ import { BackgroundImage } from '../atoms/BackgroundImage';
 import MainContent from '../organisms/MainContent';
 import { Footer } from '../organisms/Footer';
 import { Header } from '../organisms/Header';
+import { EasyAndFast } from '../organisms/EasyAndFast';
 
 export const HomeTemplate = () => {
   return (
@@ -10,6 +11,7 @@ export const HomeTemplate = () => {
       <Header />
       <section>
         <MainContent />
+        <EasyAndFast />
       </section>
       <Footer />
     </div>
