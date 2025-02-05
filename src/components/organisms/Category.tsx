@@ -1,11 +1,42 @@
 import { Headers } from '../atoms/Headers';
-import { CategoryCard } from '../atoms/CategoryCard';
+import { ICategoryCard } from '../atoms/CategoryCard';
 import { PlaneWithRectangleIcon } from '../atoms/PlaneWithRectangleIcon';
 import Bg1 from '../../assets/image/Bg1.webp';
+import { CategoryListCard } from '../molecules/CategoryListCard';
+import { SatelliteWithRectangleIcon } from '../atoms/SatelliteWithRectangleIcon';
+import { MicWithRectangleIcon } from '../atoms/MicWithRectangleIcon';
+import { SprocketWithRectangleIcon } from '../atoms/SprocketWithRectangleIcon';
 
 export const Category = () => {
+  const CARDS: ICategoryCard[] = [
+    {
+      Icon: SatelliteWithRectangleIcon,
+      title: 'Calculated Weather',
+      description:
+        'Built Wicket longer admire do barton vanity itself do in it.',
+    },
+    {
+      Icon: PlaneWithRectangleIcon,
+      title: 'Best Flights',
+      description:
+        'Engrossed listening. Park gate sell they west hard for the.',
+    },
+    {
+      Icon: MicWithRectangleIcon,
+      title: 'Local Events',
+      description:
+        'Barton vanity itself do in it. Preferd to men it engrossed listening. ',
+    },
+    {
+      Icon: SprocketWithRectangleIcon,
+      title: 'Customization',
+      description:
+        'We deliver outsourced aviation services for military customers',
+    },
+  ];
+
   return (
-    <section className="relative">
+    <section className="relative flex flex-col gap-16 py-28">
       <Headers
         label="Category"
         sublabel="We Offer Best Services"
@@ -13,11 +44,7 @@ export const Category = () => {
         sublabelStyles="text-3xl lg:text-5xl text-navyblue font-bold font-volkhov"
         sectionStyles="gap-1 lg:gap-2 text-center"
       />
-      <CategoryCard
-        Icon={PlaneWithRectangleIcon}
-        title="Best Flights"
-        description="Engrossed listening. Park gate sell they west hard for the."
-      />
+      <CategoryListCard cards={CARDS} />
       <img
         src={Bg1}
         alt="bacground image"
