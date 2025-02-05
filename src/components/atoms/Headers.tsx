@@ -14,7 +14,7 @@ export const Headers = ({
   sectionStyles,
 }: IProps) => {
   return (
-    <section className={`flex flex-col ${sectionStyles || ''}`}>
+    <section className={`relative z-10 flex flex-col ${sectionStyles || ''}`}>
       <h2 className={labelStyles}>{label}</h2>
       <h3 className={sublabelStyles}>{sublabel}</h3>
     </section>
