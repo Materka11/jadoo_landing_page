@@ -3,11 +3,20 @@ export interface IProps {
   label: string;
   sublabel: string;
   progress: number;
+  styles?: string;
 }
 
-export const TripProgress = ({ img, label, progress, sublabel }: IProps) => {
+export const TripProgress = ({
+  img,
+  label,
+  progress,
+  sublabel,
+  styles,
+}: IProps) => {
   return (
-    <div className="flex h-[129px] w-[263px] gap-3 rounded-2xl px-5 py-4 shadow-lg">
+    <div
+      className={`flex h-[129px] w-[263px] gap-3 rounded-2xl bg-white px-5 py-4 shadow-lg ${styles}`}
+    >
       <img src={img} alt="Image Profile trip" className="h-12 w-12" />
       <div className="flex flex-col justify-between gap-2">
         <article className="flex flex-col gap-1">

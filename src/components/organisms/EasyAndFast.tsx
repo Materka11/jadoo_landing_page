@@ -1,15 +1,7 @@
 import { Headers } from '../atoms/Headers';
-import { TripPost } from '../atoms/TripPost';
-import PostImage from '../../assets/image/PostImage.webp';
-import { LeafIcon } from '../atoms/LeafIcon';
-import { MapIcon } from '../atoms/MapIcon';
-import { SendIcon } from '../atoms/SendIcon';
-import { TripProgress } from '../atoms/TripProgress';
-import ProfileProgress from '../../assets/image/ProfileProgress.webp';
+import { ExampleTrip } from '../molecules/ExampleTrip';
 
 export const EasyAndFast = () => {
-  const OPTIONS = [LeafIcon, MapIcon, SendIcon];
-
   return (
     <section>
       <Headers
@@ -19,19 +11,7 @@ export const EasyAndFast = () => {
         sublabelStyles={'font-bold text-5xl text-deepblue font-volkhov'}
         sectionStyles="max-w-[500px] gap-4"
       />
-      <TripPost
-        description="14 - 29 June | by Robbin Johnosson"
-        title="Trip To Greece"
-        peopleNum={24}
-        img={PostImage}
-        options={OPTIONS}
-      />
-      <TripProgress
-        img={ProfileProgress}
-        label="Ongoing"
-        sublabel="Trip to rome"
-        progress={40}
-      />
+      <ExampleTrip />
     </section>
   );
 };
