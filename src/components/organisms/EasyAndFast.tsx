@@ -4,6 +4,8 @@ import PostImage from '../../assets/image/PostImage.webp';
 import { LeafIcon } from '../atoms/LeafIcon';
 import { MapIcon } from '../atoms/MapIcon';
 import { SendIcon } from '../atoms/SendIcon';
+import { TripProgress } from '../atoms/TripProgress';
+import ProfileProgress from '../../assets/image/ProfileProgress.webp';
 
 export const EasyAndFast = () => {
   const OPTIONS = [LeafIcon, MapIcon, SendIcon];
@@ -21,8 +23,14 @@ export const EasyAndFast = () => {
         description="14 - 29 June | by Robbin Johnosson"
         title="Trip To Greece"
         peopleNum={24}
-        photo={PostImage}
+        img={PostImage}
         options={OPTIONS}
+      />
+      <TripProgress
+        img={ProfileProgress}
+        label="Ongoing"
+        sublabel="Trip to rome"
+        progress={40}
       />
     </section>
   );

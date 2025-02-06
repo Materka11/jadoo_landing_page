@@ -3,7 +3,7 @@ import { BuildingIcon } from './BuildingIcon';
 import { HeartIcon } from './HeartIcon';
 
 export interface IProps {
-  photo: string;
+  img: string;
   title: string;
   description: string;
   options: ElementType[];
@@ -11,7 +11,7 @@ export interface IProps {
 }
 
 export const TripPost = ({
-  photo,
+  img,
   description,
   options,
   peopleNum,
@@ -19,7 +19,7 @@ export const TripPost = ({
 }: IProps) => {
   return (
     <div className="text-text-color flex h-[400px] w-[370px] flex-col justify-between gap-5 rounded-3xl px-6 py-5 shadow-lg">
-      <img src={photo} alt="Image of the post" className="rounded-3xl" />
+      <img src={img} alt="Image of the post" className="rounded-3xl" />
       <article className="flex flex-col gap-2">
         <h3 className="text-darkblue text-lg">{title}</h3>
         <p>{description}</p>
