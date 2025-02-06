@@ -15,8 +15,8 @@ export const AppStore = ({ Icon, label, link, sublabel }: IAppStore) => {
     >
       <Icon className="h-4 w-4 lg:h-5 lg:w-5" />
       <p className="flex flex-col text-[6px] leading-3 lg:text-[8px]">
-        <h4>{label}</h4>
-        <h5 className="text-[8px] font-bold lg:text-[10px]">{sublabel}</h5>
+        <span>{label}</span>
+        <span className="text-[8px] font-bold lg:text-[10px]">{sublabel}</span>
       </p>
     </a>
   );

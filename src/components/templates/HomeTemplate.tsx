@@ -1,5 +1,6 @@
 import { BackgroundImage } from '../atoms/BackgroundImage';
 import MainContent from '../organisms/MainContent';
+import { Category } from '../organisms/Category';
 import { Footer } from '../organisms/Footer';
 import { Header } from '../organisms/Header';
 import { EasyAndFast } from '../organisms/EasyAndFast';
@@ -11,6 +12,8 @@ export const HomeTemplate = () => {
       <Header />
       <section className="flex flex-col gap-10 lg:gap-28">
         <MainContent />
+
+        <Category />
         <EasyAndFast />
       </section>
       <Footer />
