@@ -21,7 +21,7 @@ export const TripPost = ({
 }: IProps) => {
   return (
     <div
-      className={`text-text-color relative flex h-[400px] w-[370px] flex-col justify-between gap-5 rounded-3xl bg-white px-6 py-5 shadow-lg ${styles}`}
+      className={`text-text-color relative flex h-[400px] max-w-[370px] flex-col justify-between gap-5 rounded-3xl bg-white px-6 py-5 shadow-lg ${styles}`}
     >
       <img src={img} alt="Image of the post" className="rounded-3xl" />
       <article className="flex flex-col gap-2">
