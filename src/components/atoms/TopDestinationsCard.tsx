@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { convertDaysToDay } from '../../helpers/convertDaysToDay';
+import { convertDaysToDay } from '../../helpers/ConvertDaysToDay';
 
 export interface ITopDestinationsCardProps {
+  id: number;
   url: string;
   location: string;
   price: string;
@@ -9,6 +10,7 @@ export interface ITopDestinationsCardProps {
 }
 
 export const TopDestinationsCard = ({
+  id,
   url,
   duration,
   location,
@@ -16,6 +18,7 @@ export const TopDestinationsCard = ({
 }: ITopDestinationsCardProps) => {
   return (
     <motion.div
+      key={id}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.05, boxShadow: '0px 15px 30px rgba(0,0,0,0.2)' }}
