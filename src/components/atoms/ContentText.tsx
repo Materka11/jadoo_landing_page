@@ -12,7 +12,7 @@ export const ContentText = () => (
       Travel, enjoy
       <br /> and live a new and full life
     </h1>
-    <p className="font-popins text-blueGray mt-4 text-base font-medium">
+    <p className="font-popins text-text-color mt-4 text-base font-medium">
       Built Wicket longer admire do barton vanity itself do in it. Preferred to
       sportsmen it engrossed listening. Park gate sell they west hard for the.
     </p>
