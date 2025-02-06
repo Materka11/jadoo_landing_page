@@ -8,7 +8,6 @@ export default {
   title: 'Components/TopDestinationsCard',
   component: TopDestinationsCard,
   argTypes: {
-    id: { control: 'number' },
     url: { control: 'text' },
     location: { control: 'text' },
     price: { control: 'text' },
@@ -22,8 +21,7 @@ const Template: StoryFn<ITopDestinationsCardProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  id: 1,
-  url: 'src/assets/image/rome.webp',
+  url: 'src\assets\image\rome.webp',
   location: 'Rome, Italy',
   price: '$11,4k',
   duration: '10',
