@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { convertDaysToDay } from '../../helpers/ConvertDaysToDay';
 
 export interface ITopDestinationsCardProps {
   url: string;
@@ -13,10 +14,6 @@ export const TopDestinationsCard = ({
   location,
   price,
 }: ITopDestinationsCardProps) => {
-  const convertDaysToDay = (day: string) => {
-    return day === '1' ? 'Day' : 'Days';
-  };
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
