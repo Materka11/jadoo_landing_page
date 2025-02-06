@@ -1,5 +1,6 @@
 import { ChooseDestinationIcon } from '../atoms/ChooseDestinationIcon';
 import { Headers } from '../atoms/Headers';
+import { ExampleTrip } from '../molecules/ExampleTrip';
 import { ListElement } from '../atoms/ListElement';
 
 export const EasyAndFast = () => {
@@ -17,6 +18,7 @@ export const EasyAndFast = () => {
         label={'Choose Destination'}
         description={'Pick a destination that suits your travel plans.'}
       />
+      <ExampleTrip />
     </section>
   );
 };
