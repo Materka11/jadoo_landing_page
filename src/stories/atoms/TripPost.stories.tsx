@@ -17,6 +17,6 @@ Default.args = {
   description: '14 - 29 June | by Robbin Johnosson',
   options: [LeafIcon, MapIcon, SendIcon],
   peopleNum: 24,
-  photo: PostImage,
+  img: PostImage,
   title: 'Trip To Greece',
 };
