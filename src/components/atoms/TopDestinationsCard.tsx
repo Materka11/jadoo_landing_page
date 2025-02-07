@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { convertDaysToDay } from '../../helpers/ConvertDaysToDay';
+import { convertDaysToDay } from '../../helpers/convertDaysToDay';
 
 export interface ITopDestinationsCardProps {
   id: number;

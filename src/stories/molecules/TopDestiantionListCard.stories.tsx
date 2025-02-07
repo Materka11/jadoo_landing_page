@@ -3,7 +3,7 @@ import {
   IDestinationsProps,
   TopDestinationListCard,
 } from '../../components/molecules/TopDestinationListCard';
-import { destinations } from '../../data/destinations';
+import { DESTINATIONS } from '../../data/destinations';
 
 export default {
   title: 'Components/TopSellingListCard',
@@ -16,5 +16,5 @@ const Template: StoryFn<IDestinationsProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  destinations,
+  destinations: DESTINATIONS,
 };

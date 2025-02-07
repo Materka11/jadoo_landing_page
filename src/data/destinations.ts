@@ -1,6 +1,6 @@
 import { ITopDestinationsCardProps } from '../components/atoms/TopDestinationsCard';
 
-export const destinations: ITopDestinationsCardProps[] = [
+export const DESTINATIONS: ITopDestinationsCardProps[] = [
   {
     id: 1,
     url: 'src/assets/image/rome.webp',
