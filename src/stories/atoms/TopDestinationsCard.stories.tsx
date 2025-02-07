@@ -21,7 +21,7 @@ const Template: StoryFn<ITopDestinationsCardProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  url: 'src\assets\image\rome.webp',
+  url: 'src/assets/image/rome.webp',
   location: 'Rome, Italy',
   price: '$11,4k',
   duration: '10',
