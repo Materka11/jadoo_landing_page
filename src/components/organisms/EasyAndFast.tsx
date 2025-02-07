@@ -1,24 +1,45 @@
 import { ChooseDestinationIcon } from '../atoms/ChooseDestinationIcon';
 import { Headers } from '../atoms/Headers';
 import { ExampleTrip } from '../molecules/ExampleTrip';
-import { ListElement } from '../atoms/ListElement';
+import { IListElement } from '../atoms/ListElement';
+import { List } from '../molecules/List';
+import { PaymentIcon } from '../atoms/PaymentIcon';
+import { ReachAirportIcon } from '../atoms/ReachAirportIcon';
 
 export const EasyAndFast = () => {
+  const ITEMS_LIST: IListElement[] = [
+    {
+      Icon: ChooseDestinationIcon,
+      label: 'Choose Destination',
+      description: 'Pick a destination that suits your travel plans.',
+    },
+    {
+      Icon: PaymentIcon,
+      label: 'Make Payment',
+      description: 'Complete your booking with our secure payment system.',
+    },
+    {
+      Icon: ReachAirportIcon,
+      label: 'Reach Airport on Selected Date',
+      description: 'Arrive at the airport on your selected date and time.',
+    },
+  ];
+
   return (
     <section>
-      <Headers
-        label={'Easy and Fast'}
-        sublabel={'Book Your Next Trip In 3 Easy Steps'}
-        labelStyles={'font-[600] text-lg text-text-color'}
-        sublabelStyles={'font-bold text-5xl text-deepblue font-volkhov'}
-        sectionStyles="max-w-[500px] gap-4"
-      />
-      <ListElement
-        Icon={ChooseDestinationIcon}
-        label={'Choose Destination'}
-        description={'Pick a destination that suits your travel plans.'}
-      />
-      <ExampleTrip />
+      <div>
+        <Headers
+          label={'Easy and Fast'}
+          sublabel={'Book Your Next Trip In 3 Easy Steps'}
+          labelStyles={'font-[600] text-lg text-text-color'}
+          sublabelStyles={'font-bold text-5xl text-deepblue font-volkhov'}
+          sectionStyles="max-w-[500px] gap-4"
+        />
+        <List items={ITEMS_LIST} />
+      </div>
+      <div>
+        <ExampleTrip />
+      </div>
     </section>
   );
 };
