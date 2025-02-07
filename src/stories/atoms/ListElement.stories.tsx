@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { ListElement, IProps } from '../../components/atoms/ListElement';
+import { ListElement, IListElement } from '../../components/atoms/ListElement';
 import { ChooseDestinationIcon } from '../../components/atoms/ChooseDestinationIcon';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: ListElement,
 } as Meta;
 
-const Template: StoryFn<IProps> = (args) => <ListElement {...args} />;
+const Template: StoryFn<IListElement> = (args) => <ListElement {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
