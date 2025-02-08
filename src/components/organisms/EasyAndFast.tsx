@@ -26,8 +26,8 @@ export const EasyAndFast = () => {
   ];
 
   return (
-    <section className="flex justify-between">
-      <div className="flex flex-col gap-7">
+    <section className="flex flex-col justify-between gap-12 sm:items-center lg:flex-row">
+      <div className="flex flex-col gap-10 sm:gap-7">
         <Headers
           label={'Easy and Fast'}
           sublabel={'Book Your Next Trip In 3 Easy Steps'}

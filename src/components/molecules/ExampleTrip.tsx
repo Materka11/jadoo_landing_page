@@ -30,8 +30,8 @@ export const ExampleTrip = () => {
         />
       </motion.div>
       <motion.div
-        className="absolute top-[55%] right-0 z-20 translate-x-[5%] sm:translate-x-[45%]"
-        initial={{ opacity: 0, x: 50 }}
+        className="absolute top-[55%] right-0 z-20 -translate-x-[10%] sm:translate-x-[45%]"
+        initial={{ opacity: 0, x: 100 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
