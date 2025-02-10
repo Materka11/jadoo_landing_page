@@ -3,6 +3,7 @@ import MainContent from '../organisms/MainContent';
 import { Category } from '../organisms/Category';
 import { Footer } from '../organisms/Footer';
 import { Header } from '../organisms/Header';
+import TopSelling from '../organisms/TopSelling';
 
 export const HomeTemplate = () => {
   return (
@@ -11,6 +12,7 @@ export const HomeTemplate = () => {
       <Header />
       <section>
         <MainContent />
+        <TopSelling />
         <Category />
       </section>
       <Footer />

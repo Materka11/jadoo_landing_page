@@ -23,7 +23,7 @@ export const TopDestinationsCard = ({
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.05, boxShadow: '0px 15px 30px rgba(0,0,0,0.2)' }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
-      className="relative flex h-[451px] w-1/3 cursor-pointer flex-col items-center justify-end overflow-hidden rounded-xl"
+      className="relative flex h-[551px] w-full cursor-pointer flex-col items-center justify-end overflow-hidden rounded-xl md:h-[850px] lg:h-[451px] lg:w-1/3 xl:h-[451px] 2xl:h-[451px]"
     >
       <motion.img
         src={url}
