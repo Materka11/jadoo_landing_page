@@ -4,6 +4,7 @@ import { Category } from '../organisms/Category';
 import { Footer } from '../organisms/Footer';
 import { Header } from '../organisms/Header';
 import { EasyAndFast } from '../organisms/EasyAndFast';
+import { Testimonials } from '../organisms/Testimonials';
 
 export const HomeTemplate = () => {
   return (
@@ -12,9 +13,9 @@ export const HomeTemplate = () => {
       <Header />
       <section className="flex flex-col gap-10 lg:gap-28">
         <MainContent />
-
         <Category />
         <EasyAndFast />
+        <Testimonials />
       </section>
       <Footer />
     </div>
