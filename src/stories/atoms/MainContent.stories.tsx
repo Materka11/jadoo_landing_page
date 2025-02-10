@@ -2,7 +2,7 @@ import type { Meta, StoryFn } from '@storybook/react';
 import { MainContentImage } from '../../components/atoms/MainContentImage';
 
 export default {
-  title: 'Components/MainContentImage',
+  title: 'atoms/MainContentImage',
   component: MainContentImage,
 } as Meta;
 

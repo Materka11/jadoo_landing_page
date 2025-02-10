@@ -5,7 +5,7 @@ import {
 } from '../../components/atoms/PlaneImage';
 
 export default {
-  title: 'Components/PlaneImage',
+  title: 'atoms/PlaneImage',
   component: PlaneImage,
   argTypes: {
     className: { control: 'text' },
