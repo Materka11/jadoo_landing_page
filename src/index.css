@@ -15,9 +15,10 @@
   --color-sunset-orange: #df6951;
   --color-orange: #df6951;
   --color-content-title: #181e4b;
-  --color-blueGray: #5e6282;
+  --color-text-color: #5e6282;
   --color-dark-gray: #686d77;
   --color-orange-button: #f1a501;
+  --color-light-purple: #8a79df;
 }
 
 :root {
