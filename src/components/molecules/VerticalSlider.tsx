@@ -1,11 +1,16 @@
+import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 import { ITestimonial, Testimonial } from '../atoms/Testimonial';
 import Avatar from '../../assets/image/Avatar.webp';
+import { ChevronTop } from '../atoms/ChevronTop';
+import { Swiper as SwiperType } from 'swiper';
+import { Navigation, EffectCreative } from 'swiper/modules';
 
 export const VerticalSlider = () => {
+  const swiperRef = useRef<SwiperType>();
+
   const TESTIMONIALS: ITestimonial[] = [
     {
       avatar: Avatar,
@@ -36,23 +41,53 @@ export const VerticalSlider = () => {
       subname: 'Sydney, Australia',
     },
   ];
+
   return (
-    <Swiper
-      direction="vertical"
-      spaceBetween={0}
-      slidesPerView={'auto'}
-      modules={[Navigation]}
-      navigation
-      className="h-[356px] w-[669px]"
-      centeredSlides
-    >
-      {TESTIMONIALS.map((testimonial) => (
-        <SwiperSlide key={testimonial.name}>
-          <div className="opacity-80 hover:opacity-100">
-            <Testimonial {...testimonial} />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="flex h-[556px] w-[669px] items-center justify-center">
+      <Swiper
+        direction="vertical"
+        modules={[Navigation, EffectCreative]}
+        effect="creative"
+        loop
+        creativeEffect={{
+          prev: {
+            translate: [66, -150, 0],
+            rotate: [0, 0, 0],
+          },
+          next: {
+            translate: [66, 150, 0],
+            rotate: [0, 0, 0],
+          },
+        }}
+        className="h-full w-full"
+        onBeforeInit={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        slidesPerView={1}
+      >
+        {TESTIMONIALS.map((testimonial) => (
+          <SwiperSlide key={testimonial.name}>
+            <div className="p-8">
+              <Testimonial {...testimonial} />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <div className="flex h-18 flex-col items-center justify-between">
+        <button
+          onClick={() => swiperRef.current?.slidePrev()}
+          className="cursor-pointer"
+        >
+          <ChevronTop className="h-4 w-4 text-[#3E2E4D]" />
+        </button>
+
+        <button
+          onClick={() => swiperRef.current?.slideNext()}
+          className="cursor-pointer"
+        >
+          <ChevronTop className="h-4 w-4 rotate-180 text-[#3E2E4D]" />
+        </button>
+      </div>
+    </div>
   );
 };

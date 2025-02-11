@@ -3,7 +3,7 @@ import { Headers } from '../atoms/Headers';
 
 export const Testimonials = () => {
   return (
-    <section>
+    <section className="flex justify-between">
       <Headers
         label={'Testimonials'}
         sublabel={'What People Say Abut Us.'}
