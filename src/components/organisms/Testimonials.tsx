@@ -1,3 +1,15 @@
+import { Headers } from '../atoms/Headers';
+
 export const Testimonials = () => {
-  return <section></section>;
+  return (
+    <section>
+      <Headers
+        label={'Testimonials'}
+        sublabel={'What People Say Abut Us.'}
+        labelStyles={'font-[600] text-lg text-text-color'}
+        sublabelStyles={'font-bold text-5xl text-deepblue font-volkhov'}
+        sectionStyles="max-w-[500px] gap-4"
+      />
+    </section>
+  );
 };
