@@ -11,7 +11,6 @@ export const Testimonials = () => {
         sublabelStyles={'font-bold text-5xl text-deepblue font-volkhov'}
         sectionStyles="max-w-[500px] gap-4"
       />
-
       <VerticalSlider />
     </section>
   );
