@@ -43,7 +43,7 @@ export const VerticalSlider = () => {
   ];
 
   return (
-    <div className="flex h-[556px] w-[669px] items-center justify-center">
+    <div className="flex h-[400px] w-[669px] items-center justify-center">
       <Swiper
         direction="vertical"
         modules={[Navigation, EffectCreative]}
@@ -51,11 +51,11 @@ export const VerticalSlider = () => {
         loop
         creativeEffect={{
           prev: {
-            translate: [66, -150, 0],
+            translate: [66, 80, 0],
             rotate: [0, 0, 0],
           },
           next: {
-            translate: [66, 150, 0],
+            translate: [66, 80, 0],
             rotate: [0, 0, 0],
           },
         }}
@@ -67,9 +67,14 @@ export const VerticalSlider = () => {
       >
         {TESTIMONIALS.map((testimonial) => (
           <SwiperSlide key={testimonial.name}>
-            <div className="p-8">
-              <Testimonial {...testimonial} />
-            </div>
+            {({ isActive, isPrev, isNext }) => (
+              <div className="p-8 transition-all duration-100">
+                <Testimonial
+                  {...testimonial}
+                  className={` ${isActive ? 'shadow-xl' : ''} ${isPrev || isNext ? 'border-2 border-[#F7F7F7]' : ''} transition-all duration-100`}
+                />
+              </div>
+            )}
           </SwiperSlide>
         ))}
       </Swiper>

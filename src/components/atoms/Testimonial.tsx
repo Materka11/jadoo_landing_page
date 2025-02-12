@@ -3,6 +3,7 @@ export interface ITestimonial {
   content: string;
   name: string;
   subname: string;
+  className?: string;
 }
 
 export const Testimonial = ({
@@ -10,9 +11,12 @@ export const Testimonial = ({
   content,
   name,
   subname,
+  className,
 }: ITestimonial) => {
   return (
-    <div className="text-text-color relative flex h-[245px] max-w-[504px] flex-col justify-between gap-7 rounded-xl bg-white px-8 py-7 shadow-lg">
+    <div
+      className={`text-text-color relative flex h-[245px] max-w-[504px] flex-col justify-between gap-7 rounded-xl bg-white px-8 py-7 ${className}`}
+    >
       <img
         src={avatar}
         alt="avatar"
