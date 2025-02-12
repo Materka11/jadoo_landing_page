@@ -68,10 +68,10 @@ export const VerticalSlider = () => {
         {TESTIMONIALS.map((testimonial) => (
           <SwiperSlide key={testimonial.name}>
             {({ isActive, isPrev, isNext }) => (
-              <div className="p-8 transition-all duration-100">
+              <div className="p-8">
                 <Testimonial
                   {...testimonial}
-                  className={` ${isActive ? 'shadow-xl' : ''} ${isPrev || isNext ? 'border-2 border-[#F7F7F7]' : ''} transition-all duration-100`}
+                  className={` ${isActive ? 'border-none shadow-xl' : ''} ${isPrev || isNext ? 'border-2 border-[#F7F7F7]' : ''}`}
                 />
               </div>
             )}
