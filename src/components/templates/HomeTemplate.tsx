@@ -4,6 +4,7 @@ import { Category } from '../organisms/Category';
 import { Footer } from '../organisms/Footer';
 import { Header } from '../organisms/Header';
 import { EasyAndFast } from '../organisms/EasyAndFast';
+import TopSelling from '../organisms/TopSelling';
 import { LogosSection } from '../organisms/LogosSection';
 
 export const HomeTemplate = () => {
@@ -13,6 +14,7 @@ export const HomeTemplate = () => {
       <Header />
       <section className="flex flex-col gap-10 lg:gap-28">
         <MainContent />
+        <TopSelling />
         <Category />
         <EasyAndFast />
         <LogosSection />
