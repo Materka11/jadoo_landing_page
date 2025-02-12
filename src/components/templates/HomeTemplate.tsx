@@ -5,6 +5,7 @@ import { Footer } from '../organisms/Footer';
 import { Header } from '../organisms/Header';
 import { EasyAndFast } from '../organisms/EasyAndFast';
 import TopSelling from '../organisms/TopSelling';
+import { Form } from '../molecules/Form';
 
 export const HomeTemplate = () => {
   return (
@@ -16,6 +17,12 @@ export const HomeTemplate = () => {
         <TopSelling />
         <Category />
         <EasyAndFast />
+        <Form
+          label="Subscribe to get information, latest news and other
+          interesting offers about Jadoo"
+          buttonText="Subscribe"
+          placeholder="Your email"
+        />
       </section>
       <Footer />
     </div>
