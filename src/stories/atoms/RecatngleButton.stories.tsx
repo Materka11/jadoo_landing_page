@@ -1,7 +1,7 @@
 import { Meta, StoryFn } from '@storybook/react';
 import {
   RectangleButton,
-  IButtonProps,
+  ButtonProps,
 } from '../../components/atoms/RectangleButton';
 
 export default {
@@ -9,7 +9,7 @@ export default {
   component: RectangleButton,
 } as Meta;
 
-const Template: StoryFn<IButtonProps> = (args) => <RectangleButton {...args} />;
+const Template: StoryFn<ButtonProps> = (args) => <RectangleButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
