@@ -6,7 +6,7 @@ import { Header } from '../organisms/Header';
 import { EasyAndFast } from '../organisms/EasyAndFast';
 import TopSelling from '../organisms/TopSelling';
 import { LogosSection } from '../organisms/LogosSection';
-import { Form } from '../molecules/Form';
+import { Form } from '../organisms/Form';
 
 export const HomeTemplate = () => {
   return (

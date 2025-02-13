@@ -1,6 +1,7 @@
 import { FormInput } from '../atoms/FormInput';
 import BgForm from '../../assets/image/BgForm.webp';
 import Arrow from '../../assets/image/Arrow.webp';
+import Bg1 from '../../assets/image/Bg1.webp';
 
 export interface IProps {
   label: string;

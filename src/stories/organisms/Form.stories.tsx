@@ -1,8 +1,8 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Form, IProps } from '../../components/molecules/Form';
+import { Form, IProps } from '../../components/organisms/Form';
 
 export default {
-  title: 'Molecules/Form',
+  title: 'Organisms/Form',
   component: Form,
 } as Meta;
 
