@@ -5,6 +5,7 @@ import { Footer } from '../organisms/Footer';
 import { Header } from '../organisms/Header';
 import { EasyAndFast } from '../organisms/EasyAndFast';
 import TopSelling from '../organisms/TopSelling';
+import { LogosSection } from '../organisms/LogosSection';
 
 export const HomeTemplate = () => {
   return (
@@ -16,6 +17,7 @@ export const HomeTemplate = () => {
         <TopSelling />
         <Category />
         <EasyAndFast />
+        <LogosSection />
       </section>
       <Footer />
     </div>
