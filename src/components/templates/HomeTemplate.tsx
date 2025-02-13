@@ -15,11 +15,11 @@ export const HomeTemplate = () => {
       <Header />
       <section className="flex flex-col gap-10 lg:gap-28">
         <MainContent />
-        <TopSelling />
         <Category />
+        <TopSelling />
         <EasyAndFast />
-        <LogosSection />
         <Testimonials />
+        <LogosSection />
       </section>
       <Footer />
     </div>
