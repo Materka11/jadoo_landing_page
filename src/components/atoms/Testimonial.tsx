@@ -15,7 +15,7 @@ export const Testimonial = ({
 }: ITestimonial) => {
   return (
     <div
-      className={`text-text-color relative flex h-[245px] max-w-[504px] flex-col justify-between gap-7 rounded-xl bg-white px-8 py-7 ${className}`}
+      className={`text-text-color relative flex h-full max-w-[504px] flex-col justify-between gap-7 rounded-xl bg-white px-8 py-7 lg:h-[245px] ${className}`}
     >
       <img
         src={avatar}
