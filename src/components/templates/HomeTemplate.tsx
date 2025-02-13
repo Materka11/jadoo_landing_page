@@ -5,6 +5,7 @@ import { Footer } from '../organisms/Footer';
 import { Header } from '../organisms/Header';
 import { EasyAndFast } from '../organisms/EasyAndFast';
 import TopSelling from '../organisms/TopSelling';
+import { LogosSection } from '../organisms/LogosSection';
 import { Form } from '../molecules/Form';
 
 export const HomeTemplate = () => {
@@ -17,6 +18,7 @@ export const HomeTemplate = () => {
         <TopSelling />
         <Category />
         <EasyAndFast />
+        <LogosSection />
         <Form
           label="Subscribe to get information, latest news and other
           interesting offers about Jadoo"
