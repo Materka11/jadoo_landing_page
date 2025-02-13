@@ -13,7 +13,7 @@ export const PlayDemo = ({ onClick }: IPlayDemoProps) => (
       <div className="bg-orange absolute inset-0 animate-pulse rounded-full opacity-30"></div>
       <Triangle />
     </button>
-    <p className="font-popins text-dark-gray text-sm font-medium lg:text-lg">
+    <p className="font-popins text-dark-gray text-xs font-medium lg:text-lg">
       Play Demo
     </p>
   </div>

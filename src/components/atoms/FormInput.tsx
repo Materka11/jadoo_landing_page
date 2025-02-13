@@ -8,8 +8,8 @@ export interface IProps {
 
 export const FormInput = ({ buttonText, placeholder }: IProps) => {
   return (
-    <div className="z-10 flex justify-center gap-6">
-      <div className="font-montserrat flex h-[68px] w-[421px] items-center gap-4 rounded-xl bg-white px-8 py-6 text-sm">
+    <div className="z-10 flex items-center justify-center gap-6">
+      <div className="font-montserrat flex items-center gap-4 rounded-xl bg-white px-4 py-4 text-xs lg:h-[68px] lg:w-[421px] lg:px-8 lg:py-6 lg:text-sm">
         <EmailIcon className="h-4 w-4" />
         <input
           placeholder={placeholder}

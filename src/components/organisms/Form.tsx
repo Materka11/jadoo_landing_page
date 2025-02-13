@@ -1,7 +1,6 @@
 import { FormInput } from '../atoms/FormInput';
 import BgForm from '../../assets/image/BgForm.webp';
 import Arrow from '../../assets/image/Arrow.webp';
-import Bg1 from '../../assets/image/Bg1.webp';
 
 export interface IProps {
   label: string;
@@ -11,7 +10,7 @@ export interface IProps {
 
 export const Form = ({ label, buttonText, placeholder }: IProps) => {
   return (
-    <section className="relative flex h-[407px] w-full flex-col justify-between rounded-[20px] rounded-tl-[129px] bg-[#DFD7F9]/20 px-36 py-20">
+    <section className="relative flex h-full w-full flex-col justify-between gap-5 rounded-[20px] bg-[#DFD7F9]/20 px-2 py-5 sm:px-12 lg:h-[407px] lg:gap-0 lg:rounded-tl-[129px] lg:px-36 lg:py-20">
       <img src={BgForm} className="absolute bottom-0 -left-20 z-0" />
       <img
         src={BgForm}
@@ -19,9 +18,9 @@ export const Form = ({ label, buttonText, placeholder }: IProps) => {
       />
       <img
         src={Arrow}
-        className="absolute top-0 right-0 z-10 -translate-y-1/4 translate-x-1/4"
+        className="absolute top-0 right-0 z-10 hidden -translate-y-1/4 translate-x-1/4 lg:block"
       />
-      <h3 className="text-text-color z-10 text-center text-[33px] leading-[54px] font-[600]">
+      <h3 className="text-text-color z-10 text-center text-lg font-[600] lg:text-[33px] lg:leading-[54px]">
         {label}
       </h3>
       <FormInput buttonText={buttonText} placeholder={placeholder} />
