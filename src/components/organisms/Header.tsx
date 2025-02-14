@@ -40,7 +40,7 @@ export const Header = () => {
           </section>
         </section>
         <section className="flex flex-col gap-5 lg:flex-row xl:gap-11">
-          <AuthButton label={t('login')} action={() => {}} />
+          <AuthButton label={t('login')} action={() => {}} isBorder />
           <AuthButton
             label={t('signup')}
             action={() => {}}
