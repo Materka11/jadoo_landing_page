@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import TopSelling from '../../components/organisms/TopSelling';
+import { TopSelling } from '../../components/organisms/TopSelling';
 
 export default {
   title: 'Organisms/TopSelling',
