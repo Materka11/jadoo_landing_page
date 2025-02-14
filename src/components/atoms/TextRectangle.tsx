@@ -1,8 +1,8 @@
-interface IProps {
+export interface IProps {
   className?: string;
 }
 
-const TextRectangle = ({ className }: IProps) => {
+export const TextRectangle = ({ className }: IProps) => {
   return (
     <svg
       width="100%"
@@ -19,5 +19,3 @@ const TextRectangle = ({ className }: IProps) => {
     </svg>
   );
 };
-
-export default TextRectangle;

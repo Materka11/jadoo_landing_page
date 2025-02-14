@@ -1,4 +1,4 @@
-import TextRectangle from './TextRectangle';
+import { TextRectangle } from './TextRectangle';
 
 export const ContentText = () => (
   <div className="relative flex flex-col">
