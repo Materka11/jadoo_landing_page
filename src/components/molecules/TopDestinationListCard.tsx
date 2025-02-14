@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import topSellingBgImage from '../../assets/image/topSellingBgImage.webp';
 import {
   ITopDestinationsCardProps,
   TopDestinationsCard,
@@ -24,7 +25,8 @@ export const TopDestinationListCard = ({
 
       <motion.img
         className="absolute top-16 right-6 -z-1 hidden h-1/2 w-24 items-center justify-center lg:block xl:block 2xl:block"
-        src="src/assets/image/topSellingBgImage.webp"
+        src={topSellingBgImage}
+        alt="Top Selling Background"
         initial={{ opacity: 0, scale: 0.9, y: -10 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         whileHover={{ scale: 1.15 }}
