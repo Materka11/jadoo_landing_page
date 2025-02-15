@@ -8,7 +8,7 @@ export const TextAndButtons = () => {
       <div>
         <ContentText />
       </div>
-      <div className="mt-10 flex gap-8 sm:w-full sm:items-center sm:justify-center sm:pl-16 lg:gap-14">
+      <div className="mt-10 flex gap-8 sm:w-full lg:gap-14">
         <RectangleButton
           color="bg-orange-button"
           label="Find out more"

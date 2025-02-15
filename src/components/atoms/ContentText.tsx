@@ -1,9 +1,9 @@
-import TextRectangle from './TextRectangle';
+import { TextRectangle } from './TextRectangle';
 
 export const ContentText = () => (
-  <div className="relative flex flex-col sm:text-center">
-    <div className="matrix-[1,0,0,1,0,0] bg-orange absolute top-28 left-80 z-1 hidden w-0 transform lg:top-22 lg:left-40 lg:block lg:h-16 xl:left-70 2xl:left-70">
-      <TextRectangle />
+  <div className="relative flex flex-col">
+    <div className="matrix-[1,0,0,1,0,0] bg-orange absolute top-28 right-0 z-1 hidden w-0 transform lg:top-22 lg:block lg:h-16">
+      <TextRectangle className="h-3 w-[376px] -translate-x-[70%]" />
     </div>
     <h2 className="font-popins text-orange mb-3 text-xl font-bold">
       BEST DESTINATIONS AROUND THE WORLD
