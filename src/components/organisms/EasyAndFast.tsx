@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { ChooseDestinationIcon } from '../atoms/ChooseDestinationIcon';
 import { Headers } from '../atoms/Headers';
 import { ExampleTrip } from '../molecules/ExampleTrip';
@@ -7,21 +8,23 @@ import { PaymentIcon } from '../atoms/PaymentIcon';
 import { ReachAirportIcon } from '../atoms/ReachAirportIcon';
 
 export const EasyAndFast = () => {
+  const { t } = useTranslation();
+
   const ITEMS_LIST: IListElement[] = [
     {
       Icon: ChooseDestinationIcon,
-      label: 'Choose Destination',
-      description: 'Pick a destination that suits your travel plans.',
+      label: t('choose_destination'),
+      description: t('choose_destination_description'),
     },
     {
       Icon: PaymentIcon,
-      label: 'Make Payment',
-      description: 'Complete your booking with our secure payment system.',
+      label: t('make_payment'),
+      description: t('make_payment_description'),
     },
     {
       Icon: ReachAirportIcon,
-      label: 'Reach Airport on Selected Date',
-      description: 'Arrive at the airport on your selected date and time.',
+      label: t('reach_airport'),
+      description: t('reach_airport_description'),
     },
   ];
 
@@ -29,8 +32,8 @@ export const EasyAndFast = () => {
     <section className="flex flex-col justify-between gap-12 sm:items-center lg:flex-row">
       <div className="flex flex-col gap-10 sm:gap-7">
         <Headers
-          label={'Easy and Fast'}
-          sublabel={'Book Your Next Trip In 3 Easy Steps'}
+          label={t('easy_and_fast')}
+          sublabel={t('book_trip_steps')}
           labelStyles={'font-[600] text-lg text-text-color'}
           sublabelStyles={'font-bold text-5xl text-deepblue font-volkhov'}
           sectionStyles="max-w-[500px] gap-4"

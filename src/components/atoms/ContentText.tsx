@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import TextRectangle from './TextRectangle';
+import { TextRectangle } from './TextRectangle';
 
 export const ContentText = () => {
   const { t } = useTranslation();

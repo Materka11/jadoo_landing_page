@@ -7,11 +7,13 @@ import { TripProgress } from '../atoms/TripProgress';
 import ProfileProgress from '../../assets/image/ProfileProgress.webp';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const ExampleTrip = () => {
   const OPTIONS = [LeafIcon, MapIcon, SendIcon];
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const { t } = useTranslation();
 
   return (
     <motion.div className="relative w-fit" ref={ref}>
@@ -22,8 +24,8 @@ export const ExampleTrip = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         <TripPost
-          description="14 - 29 June | by Robbin Johnosson"
-          title="Trip To Greece"
+          description={t('trip_dates')}
+          title={t('trip_to_greece')}
           peopleNum={24}
           img={PostImage}
           options={OPTIONS}
@@ -37,8 +39,8 @@ export const ExampleTrip = () => {
       >
         <TripProgress
           img={ProfileProgress}
-          label="Ongoing"
-          sublabel="Trip to rome"
+          label={t('ongoing_trip')}
+          sublabel={t('trip_to_rome')}
           progress={40}
         />
       </motion.div>

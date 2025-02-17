@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 export interface IProps {
   img: string;
   label: string;
@@ -13,6 +15,7 @@ export const TripProgress = ({
   sublabel,
   styles,
 }: IProps) => {
+  const { t } = useTranslation();
   return (
     <div
       className={`flex h-[129px] w-[263px] gap-3 rounded-2xl bg-white px-5 py-4 shadow-lg ${styles}`}
@@ -25,7 +28,8 @@ export const TripProgress = ({
         </article>
         <div className="flex flex-col gap-2">
           <div className="text-sm">
-            <span className="text-light-purple">{progress}%</span> completed
+            <span className="text-light-purple">{progress}%</span>{' '}
+            {t('completed')}
           </div>
           <div className="h-1 w-full rounded-full bg-gray-100">
             <div

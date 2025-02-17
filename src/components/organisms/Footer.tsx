@@ -8,23 +8,26 @@ import { IAppStore } from '../atoms/AppStore';
 import { AppleIcon } from '../atoms/AppleIcon';
 import { GooglePlayIcon } from '../atoms/GooglePlayIcon';
 import { IGroupLinks, ListNavlinks } from '../molecules/ListNavlinks';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   const LINKS: IGroupLinks = {
     company: [
-      { label: 'About', url: '/' },
-      { label: 'Careers', url: '/' },
-      { label: 'Mobile', url: '/' },
+      { label: t('about'), url: '/' },
+      { label: t('careers'), url: '/' },
+      { label: t('mobile'), url: '/' },
     ],
     contact: [
-      { label: 'Help/FAQ', url: '/' },
-      { label: 'Press', url: '/' },
-      { label: 'Affilates', url: '/' },
+      { label: t('help'), url: '/' },
+      { label: t('press'), url: '/' },
+      { label: t('affiliates'), url: '/' },
     ],
     more: [
-      { label: 'Airlinefees', url: '/' },
-      { label: 'Airline', url: '/' },
-      { label: 'Low fare tips', url: '/' },
+      { label: t('airlinefees'), url: '/' },
+      { label: t('airline'), url: '/' },
+      { label: t('lowfaretips'), url: '/' },
     ],
   };
 
@@ -47,13 +50,13 @@ export const Footer = () => {
   const APP_STORIES: IAppStore[] = [
     {
       Icon: GooglePlayIcon,
-      label: 'Get it on',
+      label: t('googlePlay_label'),
       link: 'https://google.com',
       sublabel: 'Google Play',
     },
     {
       Icon: AppleIcon,
-      label: 'Available on the',
+      label: t('appleStore_label'),
       link: 'https://apple.com',
       sublabel: 'Apple Store',
     },
@@ -63,8 +66,8 @@ export const Footer = () => {
     <footer className="flex flex-col items-center gap-12 lg:gap-21">
       <section className="flex w-full flex-col items-center justify-between gap-5 md:flex-row lg:gap-0">
         <Headers
-          label="Jadoo."
-          sublabel="Book your trip in minute, get full control for much longer"
+          label={t('label')}
+          sublabel={t('sublabel')}
           labelStyles="text-3xl lg:text-5xl text-deepblue"
           sublabelStyles="text-xs lg:text-sm text-gray-600 max-w-[225px]"
           sectionStyles="gap-3 lg:gap-5"
@@ -73,7 +76,7 @@ export const Footer = () => {
         <Socials socials={SOCIALS} appStories={APP_STORIES} />
       </section>
       <h6 className="text-center text-xs text-gray-600 lg:text-sm">
-        All rights reserved
+        {t('rightsReserved')}
       </h6>
     </footer>
   );

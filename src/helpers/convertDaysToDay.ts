@@ -1,3 +1,3 @@
-export const convertDaysToDay = (day: string) => {
-  return day === '1' ? 'Day' : 'Days';
+export const convertDaysToDay = (day: string, t: (key: string) => string) => {
+  return day === '1' ? t('trip_day') : t('trip_days');
 };

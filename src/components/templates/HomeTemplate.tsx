@@ -8,8 +8,11 @@ import { Testimonials } from '../organisms/Testimonials';
 import { TopSelling } from '../organisms/TopSelling';
 import { LogosSection } from '../organisms/LogosSection';
 import { Form } from '../organisms/Form';
+import { useTranslation } from 'react-i18next';
 
 export const HomeTemplate = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex h-full min-h-screen w-full max-w-[1200px] flex-col justify-between gap-10 overflow-x-hidden p-6 lg:gap-28 lg:p-0 lg:px-6 lg:py-6 xl:py-12">
       <BackgroundImage />
@@ -22,10 +25,9 @@ export const HomeTemplate = () => {
         <Testimonials />
         <LogosSection />
         <Form
-          label="Subscribe to get information, latest news and other
-          interesting offers about Jadoo"
-          buttonText="Subscribe"
-          placeholder="Your email"
+          label={t('form_label')}
+          buttonText={t('form_buttonText')}
+          placeholder={t('form_placeholder')}
         />
       </section>
       <Footer />
