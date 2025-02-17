@@ -47,7 +47,7 @@ export const Category = () => {
       <CategoryListCard cards={CARDS} />
       <img
         src={Bg1}
-        alt="background image"
+        alt="Background image"
         className="absolute top-0 -right-20 z-0"
       />
     </section>

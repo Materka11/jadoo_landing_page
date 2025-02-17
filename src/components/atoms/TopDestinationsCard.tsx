@@ -27,6 +27,7 @@ export const TopDestinationsCard = ({
     >
       <motion.img
         src={url}
+        alt="Destinations image"
         className="absolute z-0 h-full w-full p-6"
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -46,7 +47,7 @@ export const TopDestinationsCard = ({
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <img src="src/assets/image/cursorVector.webp" />
+          <img src="src/assets/image/cursorVector.webp" alt="Cursor vector" />
           <p className="font-popins text-blueGray text-base font-medium">
             {duration} {convertDaysToDay(duration)} Trip
           </p>
