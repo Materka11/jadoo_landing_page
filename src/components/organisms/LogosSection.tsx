@@ -15,10 +15,10 @@ export const LogosSection = () => {
       loop={true}
       slidesPerView={3}
       autoplay={{
-        delay: 0,
+        delay: 5,
         disableOnInteraction: false,
       }}
-      speed={3000}
+      speed={7000}
       modules={[Autoplay]}
       onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       className="flex w-full items-center justify-center"
