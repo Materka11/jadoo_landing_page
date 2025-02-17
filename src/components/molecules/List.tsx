@@ -7,7 +7,7 @@ export interface IProps {
 export const List = ({ items }: IProps) => {
   return (
     <section className="flex flex-col gap-12">
-      {items?.map((item) => <ListElement {...item} />)}
+      {items?.map((item) => <ListElement {...item} key={item?.label} />)}
     </section>
   );
 };

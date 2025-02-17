@@ -8,6 +8,7 @@ export const HamburgerIcon = ({ className, onClick }: IProps) => {
     <button
       className={`${className} flex cursor-pointer flex-col gap-[3px]`}
       onClick={onClick}
+      aria-label="hamburger menu"
     >
       <span className="bg-midnight block h-0.5 w-4" />
       <span className="bg-midnight block h-0.5 w-4" />

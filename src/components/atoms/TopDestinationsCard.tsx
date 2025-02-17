@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { convertDaysToDay } from '../../helpers/convertDaysToDay';
+import cursorVector from '../../assets/image/cursorVector.webp';
 
 export interface ITopDestinationsCardProps {
   id: number;
@@ -28,9 +29,10 @@ export const TopDestinationsCard = ({
       <motion.img
         src={url}
         alt="Destinations image"
-        className="absolute z-0 h-full w-full p-6"
+        className="absolute z-0 aspect-[3/4] h-full p-6"
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
+        loading="lazy"
       />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -47,7 +49,11 @@ export const TopDestinationsCard = ({
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <img src="src/assets/image/cursorVector.webp" alt="Cursor vector" />
+          <img
+            src={cursorVector}
+            alt="Cursor vector"
+            className="aspect-square h-4 w-4"
+          />
           <p className="font-popins text-blueGray text-base font-medium">
             {duration} {convertDaysToDay(duration)} Trip
           </p>

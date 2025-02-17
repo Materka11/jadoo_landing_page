@@ -48,7 +48,8 @@ export const Category = () => {
       <img
         src={Bg1}
         alt="Background image"
-        className="absolute top-0 -right-20 z-0"
+        className="absolute top-0 -right-20 z-0 aspect-square w-[230px] scale-50"
+        loading="lazy"
       />
     </section>
   );

@@ -34,7 +34,8 @@ export const LogosSection = () => {
               <img
                 src={url}
                 alt={alt}
-                className={`h-20 w-auto max-w-20 object-contain transition-all duration-500 md:h-24 md:max-w-28 lg:h-24 lg:max-w-32 xl:h-28 xl:max-w-[120px] 2xl:h-32 2xl:max-w-[140px] ${isCenter ? 'grayscale-0' : 'grayscale'} `}
+                className={`aspect-square h-20 w-auto max-w-20 object-contain transition-all duration-500 md:h-24 md:max-w-28 lg:h-24 lg:max-w-32 xl:h-28 xl:max-w-[120px] 2xl:h-32 2xl:max-w-[140px] ${isCenter ? 'grayscale-0' : 'grayscale'} `}
+                loading="lazy"
               />
             </div>
           </SwiperSlide>

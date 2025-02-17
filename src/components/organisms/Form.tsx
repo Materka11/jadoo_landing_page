@@ -14,17 +14,20 @@ export const Form = ({ label, buttonText, placeholder }: IProps) => {
       <img
         src={BgForm}
         alt="Background image"
-        className="absolute bottom-0 -left-20 z-0"
+        className="absolute bottom-0 -left-20 z-0 hidden aspect-[4/3] lg:block"
+        loading="lazy"
       />
       <img
         src={BgForm}
-        className="absolute top-0 -right-26 z-0 scale-75 -rotate-90"
+        className="firefox-hidden absolute top-0 -right-26 z-0 hidden aspect-[4/3] scale-75 -rotate-90 lg:block"
         alt="Background image"
+        loading="lazy"
       />
       <img
         src={Arrow}
-        className="absolute top-0 right-0 z-10 hidden -translate-y-1/4 translate-x-1/4 lg:block"
+        className="absolute top-0 right-0 z-10 hidden aspect-[4/3] -translate-y-1/4 translate-x-1/4 lg:block"
         alt="Arrow"
+        loading="lazy"
       />
       <h3 className="text-text-color z-10 text-center text-lg font-[600] lg:text-[33px] lg:leading-[54px]">
         {label}
