@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { AppStore, IAppStore } from '../atoms/AppStore';
 import { ISocial, SocialIcon } from '../atoms/SocialIcon';
 
@@ -7,6 +8,7 @@ export interface IProps {
 }
 
 export const Socials = ({ socials, appStories }: IProps) => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-4">
       <section className="flex gap-6">
@@ -20,7 +22,7 @@ export const Socials = ({ socials, appStories }: IProps) => {
         ))}
       </section>
       <h4 className="mt-2 text-base text-gray-600 lg:text-xl">
-        Discover our app
+        {t('discover_app')}
       </h4>
       <section className="flex gap-2">
         {appStories?.map((appStory) => (

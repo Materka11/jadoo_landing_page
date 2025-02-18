@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { convertDaysToDay } from '../../helpers/convertDaysToDay';
 import cursorVector from '../../assets/image/cursorVector.webp';
+import { useTranslation } from 'react-i18next';
 
 export interface ITopDestinationsCardProps {
   id: number;
@@ -17,6 +18,7 @@ export const TopDestinationsCard = ({
   location,
   price,
 }: ITopDestinationsCardProps) => {
+  const { t } = useTranslation();
   return (
     <motion.div
       key={id}
@@ -42,7 +44,7 @@ export const TopDestinationsCard = ({
       >
         <div className="flex items-center justify-between">
           <h3 className="font-popins text-blueGray text-lg font-medium">
-            {location}
+            {t(location)}
           </h3>
           <p className="font-popins text-blueGray text-lg font-medium">
             {price}
@@ -55,7 +57,7 @@ export const TopDestinationsCard = ({
             className="aspect-square h-4 w-4"
           />
           <p className="font-popins text-blueGray text-base font-medium">
-            {duration} {convertDaysToDay(duration)} Trip
+            {duration} {convertDaysToDay(duration, t)} {t('trip')}
           </p>
         </div>
       </motion.div>

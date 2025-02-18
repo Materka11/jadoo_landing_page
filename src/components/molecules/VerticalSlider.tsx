@@ -7,39 +7,37 @@ import Avatar from '../../assets/image/Avatar.webp';
 import { ChevronTop } from '../atoms/ChevronTop';
 import { Swiper as SwiperType } from 'swiper';
 import { Navigation, EffectCreative } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 
 export const VerticalSlider = () => {
   const swiperRefDesktop = useRef<SwiperType>();
   const swiperRefMobile = useRef<SwiperType>();
+  const { t } = useTranslation();
 
   const TESTIMONIALS: ITestimonial[] = [
     {
       avatar: Avatar,
-      content:
-        '“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”',
-      name: 'Mike Taylor',
-      subname: 'Lahore, Pakistan',
+      content: t('testimonials_content1'),
+      name: t('testimonials_name1'),
+      subname: t('testimonials_subname1'),
     },
     {
       avatar: Avatar,
-      content:
-        '“The service was exceptional and the team was very professional. I would highly recommend them to anyone looking for quality work.”',
-      name: 'Sarah Johnson',
-      subname: 'New York, USA',
+      content: t('testimonials_content2'),
+      name: t('testimonials_name2'),
+      subname: t('testimonials_subname2'),
     },
     {
       avatar: Avatar,
-      content:
-        '“I was amazed by the attention to detail and the quick turnaround time. Truly a great experience!”',
-      name: 'David Smith',
-      subname: 'London, UK',
+      content: t('testimonials_content3'),
+      name: t('testimonials_name3'),
+      subname: t('testimonials_subname3'),
     },
     {
       avatar: Avatar,
-      content:
-        '“Fantastic communication and delivery. They really understand what the client needs.”',
-      name: 'Emily Davis',
-      subname: 'Sydney, Australia',
+      content: t('testimonials_content4'),
+      name: t('testimonials_name4'),
+      subname: t('testimonials_subname4'),
     },
   ];
 

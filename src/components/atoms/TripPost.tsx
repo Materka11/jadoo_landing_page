@@ -1,6 +1,7 @@
 import { ElementType } from 'react';
 import { BuildingIcon } from './BuildingIcon';
 import { HeartIcon } from './HeartIcon';
+import { useTranslation } from 'react-i18next';
 
 export interface IProps {
   img: string;
@@ -19,6 +20,7 @@ export const TripPost = ({
   title,
   styles,
 }: IProps) => {
+  const { t } = useTranslation();
   return (
     <div
       className={`text-text-color relative flex h-[400px] max-w-[370px] flex-col justify-between gap-5 rounded-3xl bg-white px-6 py-5 shadow-lg ${styles}`}
@@ -45,7 +47,9 @@ export const TripPost = ({
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <BuildingIcon className="h-4 w-4" />
-          <p>{peopleNum} people going</p>
+          <p>
+            {peopleNum} {t('people_going')}
+          </p>
         </div>
         <HeartIcon className="h-5 w-5" />
       </div>
