@@ -20,7 +20,8 @@ export const Testimonial = ({
       <img
         src={avatar}
         alt="avatar"
-        className="absolute top-0 left-0 h-16 w-16 -translate-1/2 rounded-full"
+        className="absolute top-0 left-0 aspect-square h-16 w-16 -translate-1/2 rounded-full"
+        loading="lazy"
       />
       <p className="leading-8">{content}</p>
       <article className="flex flex-col gap-1">

@@ -75,9 +75,9 @@ export const Footer = () => {
         <ListNavlinks groupLinks={LINKS} />
         <Socials socials={SOCIALS} appStories={APP_STORIES} />
       </section>
-      <h6 className="text-center text-xs text-gray-600 lg:text-sm">
+      <h2 className="text-center text-xs text-gray-600 lg:text-sm">
         {t('rightsReserved')}
-      </h6>
+      </h2>
     </footer>
   );
 };

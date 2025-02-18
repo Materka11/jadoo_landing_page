@@ -82,6 +82,7 @@ export const VerticalSlider = () => {
           <button
             onClick={() => swiperRefDesktop.current?.slidePrev()}
             className="cursor-pointer"
+            aria-label="chevron left"
           >
             <ChevronTop className="h-4 w-4 text-[#3E2E4D]" />
           </button>
@@ -89,6 +90,7 @@ export const VerticalSlider = () => {
           <button
             onClick={() => swiperRefDesktop.current?.slideNext()}
             className="cursor-pointer"
+            aria-label="chevron right"
           >
             <ChevronTop className="h-4 w-4 rotate-180 text-[#3E2E4D]" />
           </button>
@@ -117,6 +119,7 @@ export const VerticalSlider = () => {
           <button
             onClick={() => swiperRefMobile.current?.slidePrev()}
             className="cursor-pointer"
+            aria-label="chevron left"
           >
             <ChevronTop className="h-4 w-4 -rotate-90 text-[#3E2E4D]" />
           </button>
@@ -124,6 +127,7 @@ export const VerticalSlider = () => {
           <button
             onClick={() => swiperRefMobile.current?.slideNext()}
             className="cursor-pointer"
+            aria-label="chevron right"
           >
             <ChevronTop className="h-4 w-4 rotate-90 text-[#3E2E4D]" />
           </button>

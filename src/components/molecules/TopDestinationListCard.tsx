@@ -24,13 +24,14 @@ export const TopDestinationListCard = ({
       ))}
 
       <motion.img
-        className="absolute top-16 right-6 -z-1 hidden h-1/2 w-24 items-center justify-center lg:block xl:block 2xl:block"
+        className="absolute top-16 right-6 -z-1 hidden aspect-[1/2] h-1/2 w-24 items-center justify-center lg:block"
         src={topSellingBgImage}
         alt="Top Selling Background"
         initial={{ opacity: 0, scale: 0.9, y: -10 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         whileHover={{ scale: 1.15 }}
         transition={{ duration: 0.4, ease: 'easeOut' }}
+        loading="lazy"
       />
     </motion.div>
   );

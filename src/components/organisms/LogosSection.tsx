@@ -15,10 +15,10 @@ export const LogosSection = () => {
       loop={true}
       slidesPerView={3}
       autoplay={{
-        delay: 0,
+        delay: 5,
         disableOnInteraction: false,
       }}
-      speed={3000}
+      speed={7000}
       modules={[Autoplay]}
       onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       className="flex w-full items-center justify-center"
@@ -34,7 +34,8 @@ export const LogosSection = () => {
               <img
                 src={url}
                 alt={alt}
-                className={`h-20 w-auto max-w-20 object-contain transition-all duration-500 md:h-24 md:max-w-28 lg:h-24 lg:max-w-32 xl:h-28 xl:max-w-[120px] 2xl:h-32 2xl:max-w-[140px] ${isCenter ? 'grayscale-0' : 'grayscale'} `}
+                className={`aspect-square h-20 w-auto max-w-20 object-contain transition-all duration-500 md:h-24 md:max-w-28 lg:h-24 lg:max-w-32 xl:h-28 xl:max-w-[120px] 2xl:h-32 2xl:max-w-[140px] ${isCenter ? 'grayscale-0' : 'grayscale'} `}
+                loading="lazy"
               />
             </div>
           </SwiperSlide>

@@ -31,3 +31,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@supports (-moz-appearance: none) {
+  .firefox-hidden {
+    display: none !important;
+  }
+}
