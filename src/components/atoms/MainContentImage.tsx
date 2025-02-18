@@ -7,7 +7,8 @@ export const MainContentImage = () => (
     <img
       src={travellerImage}
       alt="Traveller"
-      className="absolute z-2 h-full w-full lg:right-2"
+      className="absolute z-2 aspect-square lg:right-2"
+      loading="lazy"
     />
     <PlaneImage className="absolute z-1 sm:hidden lg:top-24 lg:right-2 lg:block lg:h-36 lg:w-36 xl:block 2xl:block" />
   </div>

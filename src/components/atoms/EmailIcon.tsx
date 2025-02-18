@@ -15,7 +15,7 @@ export const EmailIcon = ({ className }: IProps) => {
       <path
         d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
         stroke="#39425D"
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
       <rect x="0.5" y="0.5" width="20" height="17" rx="4.5" stroke="#39425D" />
     </svg>

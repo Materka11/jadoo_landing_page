@@ -15,8 +15,8 @@ export const ChevronTop = ({ className }: IProps) => {
       <path
         d="M1 8.5L8 1.5L15 8.5"
         stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );

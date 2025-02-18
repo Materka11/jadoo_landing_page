@@ -23,14 +23,21 @@ export const TripPost = ({
     <div
       className={`text-text-color relative flex h-[400px] max-w-[370px] flex-col justify-between gap-5 rounded-3xl bg-white px-6 py-5 shadow-lg ${styles}`}
     >
-      <img src={img} alt="Image of the post" className="rounded-3xl" />
+      <img
+        src={img}
+        alt="Image of the post"
+        className="aspect-[2/1] rounded-3xl"
+        width={321}
+        height={161}
+        loading="lazy"
+      />
       <article className="flex flex-col gap-2">
         <h3 className="text-darkblue text-lg">{title}</h3>
         <p>{description}</p>
       </article>
       <div className="flex gap-4">
-        {options?.map((Icon) => (
-          <button>
+        {options?.map((Icon, index) => (
+          <button key={index} aria-label="icons">
             <Icon className="h-8 w-8" />
           </button>
         ))}
