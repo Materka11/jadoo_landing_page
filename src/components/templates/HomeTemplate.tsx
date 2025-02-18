@@ -14,7 +14,7 @@ export const HomeTemplate = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex h-full min-h-screen w-full max-w-[1200px] flex-col justify-between gap-10 overflow-x-hidden p-6 lg:gap-28 lg:p-0 lg:px-6 lg:py-6 xl:py-12">
+    <div className="flex h-full min-h-screen w-full max-w-[1440px] flex-col justify-between gap-10 overflow-x-hidden p-6 lg:gap-28 lg:p-0 lg:px-36 lg:py-6 xl:py-12">
       <BackgroundImage />
       <Header />
       <section className="flex flex-col gap-10 lg:gap-28">
